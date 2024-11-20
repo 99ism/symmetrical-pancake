@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Kain Serong</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Kalkulator Kain Serong</h1>
+        <form id="biasCalculator">
+            <label for="fabricWidth">Lebar Kain (cm):</label>
+            <input type="number" id="fabricWidth" name="fabricWidth" required>
+
+            <label for="cutAngle">Sudut Potong (°):</label>
+            <input type="number" id="cutAngle" name="cutAngle" required>
+
+            <label for="tapingWidth">Lebar Taping (cm):</label>
+            <input type="number" id="tapingWidth" name="tapingWidth" required>
+
+            <label for="tapingRequirement">Kebutuhan Taping 1 Pcs (cm):</label>
+            <input type="number" id="tapingRequirement" name="tapingRequirement" required>
+
+            <label for="quantity">Quantity Produk (pcs):</label>
+            <input type="number" id="quantity" name="quantity" required>
+        </form>
+
+        <div id="result">
+            <h2>Hasil</h2>
+            <ul>
+                <li id="resultTapingLength">Panjang Taping: </li>
+                <li id="resultTotalTapingWidth">Lebar Taping Total: </li>
+                <li id="resultBiasLength">Panjang Kain Serong: </li>
+                <li id="resultTotalFabricLength">Panjang Total Kain: </li>
+            </ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
